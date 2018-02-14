@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" type="image/ico" href="images/favicon.png">
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header>
     <nav>
       <ul>
         <li><div class="logo"><p>dr</p></div></li>
-        <li><h1>David Rosinski</h1><h5>Full Stack Web Developer</h5></li>
+        <li><h1 class="header_title">David Rosinski</h1><h5 class="header_subtitle">Full Stack Web Developer</h5></li>
         <li><a class="active" href="#"><img class="link_icons" src="images/icons/home.png" alt="Home">Home</a></li>
         <li><a href="#"><img class="link_icons" src="images/icons/briefcase.png" alt="Projects">Projects</a></li>
         <li><a href="#"><img class="link_icons" src="images/icons/user-shape.png" alt="About">About</a></li>
@@ -22,23 +22,35 @@
   </header>
   <div class="content">
     <section class="intro">
-      <h3>Introduction</h3>
+      <header>
+        <h3 class="section_headers">Introduction</h3>
+      </header>
       <p>Hello, my name is David Rosinski and I am a developer with over 10 years of experience using many different programming languages. This website was designed and created by me. Feel free to give me feedback (positive or constructive)! I am currently expanding my education and employment opportunities by working through Udacity's Full Stack Development training program. If you are interested in getting in touch with me there is a contact link in the header and footer or click <a href="#">here</a>.</p>
     </section>
     <section class="featured">
-        <h3>Featured Projects</h3>
+      <header>
+        <h3 class="section_headers">Featured Projects</h3>
+      </header>
+      <div class="flex_container">
         <article class="card">
           <img class="card_image" src="images/movie-project.jpg" alt="Project Image">
-          <h4>Movie Project</h4>
-          <h5>Python</h5>
-          <p>This is a simple python script that, when run, will dynamically create a website displaying six movies. The website includes the trailer, a description, and the movie poster.</p>
+          <h4 class="project_title">Movie Project</h4>
+          <h5 class="project_language">Python</h5>
+          <p class="project_desc">This is a simple python script that, when run, will dynamically create a website displaying six movies. The website includes the trailer, a description, and the movie poster.</p>
+        </article>
+        <article class="card">
+          <img class="card_image" src="images/coffee_kiosk1.jpg" alt="Project Image">
+          <h4 class="project_title">Coffee Kiosk</h4>
+          <h5 class="project_language">Java</h5>
+          <p class="project_desc">This is an automated coffee kiosk I created using Java. The scenario was to create a kiosk that will replace an actual human taking a coffee order.</p>
         </article>
         <article class="card">
           <img class="card_image" src="images/header-2.jpg" alt="Project Image">
-          <h4>Cofee Kiosk</h4>
-          <h5>Java</h5>
-          <p>This is an automated coffee kiosk I created using Java. The scenario was to create a kiosk that will replace an actual human taking a coffee order.</p>
+          <h4 class="project_title">Project Title</h4>
+          <h5 class="project_language">Language</h5>
+          <p class="project_desc">This is a place holder for future projects. It is also necessary to demonstrate how the cards resize.</p>
         </article>
+      </div>
     </section>
   </div>
   <footer>
