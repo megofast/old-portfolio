@@ -5,7 +5,6 @@ body {
 }
 
 .logo {
-  float: left;
   width: 42px;
   height: 42px;
   margin: 4px 0 0 10px;
@@ -33,23 +32,25 @@ body {
 }
 
 .header_subtitle {
-  margin: 0 10px 0 10px;
+  margin: 0 10px;
   color: #6c9a33;
   padding: 0;
 }
 
+.title_container {
+  display: flex;
+  align-content: center;
+}
+
 nav ul {
+  display: flex;
+  flex-flow: row;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background: white;
   box-shadow: 0px 5px 5px grey;
   width: 100%;
-}
-
-nav li {
-  float: left;
 }
 
 nav li a {
@@ -65,17 +66,17 @@ nav li a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  nav li {
-    float: none;
+  nav ul {
+    flex-flow: column;
   }
 
   nav li.rightlink {
-    float: none;
+    margin-left: 0;
   }
 }
 
 .rightlink {
-  float: right;
+  margin-left: auto;
   background: white;
 }
 
@@ -95,7 +96,6 @@ nav li a:hover {
 
 section {
   padding: 15px;
-  overflow: hidden;
 }
 
 .section_headers {
@@ -193,11 +193,8 @@ footer {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
-}
-
-.footer_links li {
-  float: left;
+  display: flex;
+  flex-flow: row;
 }
 
 .footer_links li a {
